@@ -1,3 +1,14 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(142, 202, 226);
+}
+
+span:hover {
+   background-color: red;
+    font-size: 18px;
+}
+
+div {
+    margin: 200px;
+    border: 15px solid #000;
+    border-radius: 15px;
 }
