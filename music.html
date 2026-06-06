@@ -1,5 +1,7 @@
 <html>
 
+    <script src="myscript.js"></script>
+    
     <div class="logo">
          <img src="images/logo2.gif" width="500" height="150">
 
@@ -65,9 +67,56 @@
                 I listen to eurotechno, trance, and hardstyle the most! But I like all genres!
             </p>
 
-
         </div>
 
+        <div class="row">
+            <div class="container">
+                <h3>Equalizer</h3>
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+                <div class="bar" id="bar4"></div>
+                <div class="bar" id="bar5"></div>
+            </div>
+
+            <style>
+                .container {
+                    display: block;
+                    background-color: rgb(255,255,255);
+                    margin-right: auto;
+                }
+            </style>
+
+            <div class="container">
+                <h3>SpeedMeter</h3>
+            </div>
+
+            <style>
+                .speedmeter {
+                    width: 500px;
+                    height: 500px;
+                    display: block;
+                    background-color: rgb(255,255,255);
+                    margin-right: auto;
+                }
+            </style>
+        </div>
+
+        <style>
+            .row {
+                display: flex;
+            }
+            .container {
+                padding: 5px;
+                width: 500px;
+                height: 500px;
+            }
+
+            h3 {
+                text-align: center;
+            }
+        </style>
+        
     </body>
 
 </html>
