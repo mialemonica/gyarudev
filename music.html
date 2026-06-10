@@ -1,7 +1,5 @@
 <html>
 
-    <script src="myscript.js"></script>
-    
     <div class="logo">
          <img src="images/logo2.gif" width="500" height="150">
 
@@ -96,7 +94,7 @@
                 <div class="container"id="speedmeter2">
                     <div class="arrowX"></div>
                     <div class="arrowY"></div>
-                    <div class="box"></div>
+                    <div class="box"id="box"></div>
                 </div>
                 
                 
@@ -124,9 +122,7 @@
                         #speedmeter2 {
                             width: 100%;
                             height: 88%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                            display: block;
                             background-color: rgb(10, 10, 10);
                             position: relative;
                             padding: 0;
@@ -136,22 +132,30 @@
                         .arrowX {
                             width: 90%;
                             height: 1%;
+                            left: 5%;
+                            top: 50%;
+                            transform: translateY(-55%);
                             background-image: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
                             position: absolute;
-                            border-radius:5px;
+                            border-radius: 5px;
                         }
 
                         .arrowY {
                             width: 1%;
                             height: 90%;
+                            left: 50%;
+                            top: 5%;
+                            transform: translateX(-55%);
                             background-image: linear-gradient(180deg, red, orange, yellow, green, blue, indigo, violet);
                             position: absolute;
-                            border-radius:5px;
+                            border-radius: 5px;
                         }
 
                         .box {
                             width: 20px;
                             height: 20px;
+                            left: 48%;
+                            top: 48%;
                             background-color: rgb(255, 255, 255);
                             position: absolute;
                             border-radius: 2px;
@@ -176,7 +180,8 @@
                 text-align: center;
             }
         </style>
-        
+
+        <script src="script.js"></script>
     </body>
 
 </html>
